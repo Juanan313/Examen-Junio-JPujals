@@ -5,6 +5,8 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 import org.mvpigs.commandpattern.interfaces.Pedido;
 import org.mvpigs.commandpattern.interfaces.PedidoPeligroso;
@@ -202,7 +204,10 @@ public class TestPedidos {
          * 
          * Pasasela a TratamientoPedidosMultiple en su constructor.
          */
-
+        ArrayList<Pedido> pedidos = new ArrayList();
+        pedidos.add( new PedidoNacional("Gondor", 10));
+        pedidos.add( new PedidoNacional("Minas Tirith", 10));
+        pedidos.add( new PedidoNacional("Rohan", 10));
         // Coleccion pedidos
         assertTrue(pedidos.size() == 3);
 

@@ -6,6 +6,8 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.Test;
 import org.mvpigs.commandpattern.interfaces.Pedido;
@@ -204,7 +206,7 @@ public class TestPedidos {
          * 
          * Pasasela a TratamientoPedidosMultiple en su constructor.
          */
-        ArrayList<Pedido> pedidos = new ArrayList();
+        Set<PedidoNacional> pedidos = new HashSet<>();
         pedidos.add( new PedidoNacional("Gondor", 10));
         pedidos.add( new PedidoNacional("Minas Tirith", 10));
         pedidos.add( new PedidoNacional("Rohan", 10));

@@ -11,7 +11,7 @@ public class Oficina implements Procesador {
         return pedido.tratar();
     }
 
-    public enum EstadoPedido {
+    private enum EstadoPedido {
         ACEPTADO, RECHAZADO
     }
 

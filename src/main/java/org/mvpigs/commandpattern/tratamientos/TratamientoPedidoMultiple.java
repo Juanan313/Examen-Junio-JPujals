@@ -17,15 +17,14 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
 
     public boolean tratar() {
 
-        for (Pedido pedido : pedidos) {
+        this.calcularPesoTotal();
+        this.calcularTotalBultos();
 
-            TratamientoPedido tratarPedidos = new TratamientoPedidoInternacional(pedido);
-            if (!tratarPedidos.tratar()) {
-                return false;
-            }
+        if ( this.pesoTotal > 0 && this.numBultos == pedidos.size()) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     public int getNumBultos() {

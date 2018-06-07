@@ -5,9 +5,9 @@ import org.mvpigs.commandpattern.interfaces.Pedido;
 
 public class PedidoNacional implements Pedido {
 
-    public int peso;
-    public String destino;
-    public String id;
+    private int peso;
+    private String destino;
+    private String id;
 
     //constructor
     public PedidoNacional(String destino, int peso) {

@@ -5,9 +5,9 @@ import java.util.UUID;
 
 public class PedidoInternacional implements Pedido {
 
-    public int peso;
-    public String destino;
-    public String id;
+    private int peso;
+    private String destino;
+    private String id;
 
     //constructor
     public PedidoInternacional(String destino, int peso) {

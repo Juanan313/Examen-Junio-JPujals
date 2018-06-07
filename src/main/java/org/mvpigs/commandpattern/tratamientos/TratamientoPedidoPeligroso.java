@@ -6,7 +6,7 @@ import org.mvpigs.commandpattern.interfaces.TratamientoPedido;
 
 public class TratamientoPedidoPeligroso implements TratamientoPedido {
 
-    public PedidoPeligroso pedidoATratar;
+    private PedidoPeligroso pedidoATratar;
 
     public TratamientoPedidoPeligroso( PedidoPeligroso pedidoPeligroso) {
         this.pedidoATratar = pedidoPeligroso;

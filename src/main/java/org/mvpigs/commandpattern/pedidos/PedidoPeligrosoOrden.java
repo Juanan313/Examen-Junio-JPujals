@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class PedidoPeligrosoOrden implements PedidoPeligroso {
 
-    public int peso;
-    public String destino;
-    public String instrucciones;
-    public String id;
+    private int peso;
+    private String destino;
+    private String instrucciones;
+    private String id;
 
     public PedidoPeligrosoOrden(String destino, String instrucciones) {
         setInstrucciones(instrucciones);

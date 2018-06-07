@@ -17,6 +17,7 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
         setId(UUID.randomUUID().toString());
     }
 
+    //Getters
     public int peso() {
         return this.peso;
     }
@@ -33,6 +34,7 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
         return this.id;
     }
 
+    //Setters
     public void setPeso(int peso) {
         this.peso = peso;
     }

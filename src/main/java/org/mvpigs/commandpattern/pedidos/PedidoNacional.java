@@ -1,23 +1,23 @@
 package org.mvpigs.commandpattern.pedidos;
 
-import org.mvpigs.commandpattern.interfaces.Pedido;
 import java.util.UUID;
+import org.mvpigs.commandpattern.interfaces.Pedido;
 
-public class PedidoInternacional implements Pedido {
+public class PedidoNacional implements Pedido {
 
     public int peso;
     public String destino;
     public String id;
 
     //constructor
-    public PedidoInternacional(String destino, int peso) {
+    public PedidoNacional(String destino, int peso) {
         setDestino(destino);
         setPeso(peso);
         setId(UUID.randomUUID().toString());
     }
 
-    // Getters 
-    public String destino() {
+     // Getters 
+     public String destino() {
         return this.destino;
     }
 
@@ -41,5 +41,4 @@ public class PedidoInternacional implements Pedido {
     public void setId(String id) {
         this.id = id;
     }
-
 }
